@@ -1,0 +1,6 @@
+great.: 1
+hello: 2
+is: 1
+python: 1
+python.: 1
+world.: 1
