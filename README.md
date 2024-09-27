@@ -1,3 +1,3 @@
-# Emerging-Technologies/n
-4th Year Semester 1 Module/n
+# Emerging-Technologies
+4th Year - Semester 1 Module:
 Brendan McShane
