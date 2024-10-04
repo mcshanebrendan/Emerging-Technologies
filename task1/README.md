@@ -1,2 +1,0 @@
-#Task One: 
-Below I have some sample code, showing that I did a bit of refreshing of my python knowledge. The output and input texts files are for the sample code specifically, as it has a function that reads and writes to text files
