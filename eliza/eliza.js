@@ -47,4 +47,11 @@ function getRandomFallbackResponse() {
   return fallbackResponses[Math.floor(Math.random() * fallbackResponses.length)];
 }
 
+// Helper to extract a word after a keyword
+function extractWordAfter(keyword, text) {
+  const words = text.split(' ');
+  const index = words.indexOf(keyword);
+  return index !== -1 && index + 1 < words.length ? words[index + 1] : "something";
+}
+
   
