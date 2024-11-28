@@ -17,11 +17,21 @@ document.getElementById('send-button').addEventListener('click', () => {
   }
   
   function getElizaResponse(input) {
-    // Basic pattern-matching logic (replace with your chatbot algorithm)
-    if (input.toLowerCase().includes('hello')) {
-      return 'Hello! How can I help you today?';
+    const lowerInput = input.toLowerCase();
+
+    if (lowerInput.includes('hello') || lowerInput.includes('hi')) {
+        return 'Hello! How are you feeling today?';
+    } else if (lowerInput.includes('how are you')) {
+        return 'I am just a program, but I’m here to listen to you.';
+    } else if (lowerInput.includes('i feel')) {
+        return 'Why do you feel that way?';
+    } else if (lowerInput.includes('because')) {
+        return 'Is that the real reason?';
+    } else if (lowerInput.includes('bye')) {
+        return 'Goodbye! It was nice talking to you.';
     } else {
-      return 'Tell me more.';
+        return 'Tell me more.';
     }
-  }
+}
+
   
