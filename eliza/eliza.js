@@ -58,4 +58,17 @@ function extractWordAfter(keyword, text) {
   return index !== -1 && index + 1 < words.length ? words[index + 1] : "something";
 }
 
+function transformInput(input) {
+  const replacements = {
+      "i am": "you are",
+      "you are": "I am",
+      "i": "you",
+      "my": "your",
+      "your": "my"
+  };
+
+  const words = input.split(' ');
+  return words.map(word => replacements[word.toLowerCase()] || word).join(' ');
+}
+
   
