@@ -24,15 +24,19 @@ document.getElementById('send-button').addEventListener('click', () => {
     } else if (lowerInput.includes('because')) {
         return "Is that the real reason?";
     } else if (lowerInput.includes('you are')) {
-        return "What makes you think I am?";
+        return "What makes you think I am " + extractWordAfter('you are', lowerInput) + "?";
     } else if (lowerInput.includes('i am')) {
-        return "How long have you been?";
+        return transformInput(input) + "? Why do you say that?";
     } else if (lowerInput.includes('my')) {
         return "Tell me more about your " + extractWordAfter('my', lowerInput) + ".";
     } else if (lowerInput.includes('hello') || lowerInput.includes('hi')) {
         return "Hello! How can I help you today?";
     } else if (lowerInput.includes('bye')) {
         return "Goodbye! It was nice talking to you.";
+    } else if (lowerInput.includes('remember')) {
+        return "Can you elaborate on what you mean by 'remember'?";
+    } else if (lowerInput.includes('always')) {
+        return "Can you think of a specific example of when that happens?";
     } else {
         return getRandomFallbackResponse();
     }
