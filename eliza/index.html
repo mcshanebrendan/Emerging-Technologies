@@ -9,10 +9,21 @@
 <body>
   <div id="chat-container">
     <h1>ELIZA Chatbot</h1>
-    <div id="chat-history"></div>
-    <input type="text" id="user-input" placeholder="Type your message...">
-    <button id="send-button">Send</button>
+    <p id="intro-text">
+      Welcome to ELIZA, a chatbot that simulates a conversation by using basic pattern matching. 
+      Type your message below and see how ELIZA responds!
+    </p>
+    <div id="chat-interface">
+      <div id="chat-history"></div>
+      <div id="input-container">
+        <input type="text" id="user-input" placeholder="Type your message..." aria-label="Type your message here">
+        <button id="send-button" aria-label="Send your message">Send</button>
+      </div>
+    </div>
   </div>
+  <footer>
+    <p>Created as part of the ELIZA Chatbot Project. &copy; 2024</p>
+  </footer>
   <script src="eliza.js"></script>
 </body>
 </html>
