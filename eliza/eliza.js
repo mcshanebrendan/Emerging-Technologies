@@ -19,18 +19,22 @@ document.getElementById('send-button').addEventListener('click', () => {
   function getElizaResponse(input) {
     const lowerInput = input.toLowerCase();
 
-    if (lowerInput.includes('hello') || lowerInput.includes('hi')) {
-        return 'Hello! How are you feeling today?';
-    } else if (lowerInput.includes('how are you')) {
-        return 'I am just a program, but I’m here to listen to you.';
-    } else if (lowerInput.includes('i feel')) {
-        return 'Why do you feel that way?';
+    if (lowerInput.includes('i feel')) {
+        return "Why do you feel that way?";
     } else if (lowerInput.includes('because')) {
-        return 'Is that the real reason?';
+        return "Is that the real reason?";
+    } else if (lowerInput.includes('you are')) {
+        return "What makes you think I am?";
+    } else if (lowerInput.includes('i am')) {
+        return "How long have you been?";
+    } else if (lowerInput.includes('my')) {
+        return "Tell me more about your " + extractWordAfter('my', lowerInput) + ".";
+    } else if (lowerInput.includes('hello') || lowerInput.includes('hi')) {
+        return "Hello! How can I help you today?";
     } else if (lowerInput.includes('bye')) {
-        return 'Goodbye! It was nice talking to you.';
+        return "Goodbye! It was nice talking to you.";
     } else {
-        return 'Tell me more.';
+        return getRandomFallbackResponse();
     }
 }
 
