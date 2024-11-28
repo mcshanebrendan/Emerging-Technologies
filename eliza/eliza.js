@@ -34,4 +34,17 @@ document.getElementById('send-button').addEventListener('click', () => {
     }
 }
 
+
+// Fallback responses to add variety
+function getRandomFallbackResponse() {
+  const fallbackResponses = [
+      "Can you elaborate on that?",
+      "Why do you say that?",
+      "How does that make you feel?",
+      "Can you tell me more?",
+      "That’s interesting. Why do you think so?"
+  ];
+  return fallbackResponses[Math.floor(Math.random() * fallbackResponses.length)];
+}
+
   
