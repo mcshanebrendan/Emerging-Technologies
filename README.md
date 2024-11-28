@@ -8,6 +8,8 @@ For Emerging Technologies, we have four tasks to do regarding trigram models. We
 
 # ELIZA Chatbot 
 
+## ELIZA GITHUB PAGES LINK: https://mcshanebrendan.github.io/Emerging-Technologies/
+
 ## I changed the /eliza folder to /docs for github pages
 
 This is a client-side implementation of the ELIZA chatbot, originally created by Joseph Weizenbaum in 1966. The chatbot simulates a conversation by using basic pattern-matching techniques to respond to user input. This project uses plain JavaScript for logic and HTML/CSS for the user interface.
