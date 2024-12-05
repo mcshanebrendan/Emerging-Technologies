@@ -18,28 +18,44 @@ document.getElementById('send-button').addEventListener('click', () => {
   
   function getElizaResponse(input) {
     const lowerInput = input.toLowerCase();
-
+  
     if (lowerInput.includes('i feel')) {
-        return "Why do you feel that way?";
+      return "Why do you feel that way?";
     } else if (lowerInput.includes('because')) {
-        return "Is that the real reason?";
+      return "Is that the real reason?";
     } else if (lowerInput.includes('you are')) {
-        return "What makes you think I am " + extractWordAfter('you are', lowerInput) + "?";
+      return "What makes you think I am " + extractWordAfter('you are', lowerInput) + "?";
     } else if (lowerInput.includes('i am')) {
-        return transformInput(input) + "? Why do you say that?";
+      return transformInput(input) + "? Why do you say that?";
     } else if (lowerInput.includes('my')) {
-        return "Tell me more about your " + extractWordAfter('my', lowerInput) + ".";
+      return "Tell me more about your " + extractWordAfter('my', lowerInput) + ".";
     } else if (lowerInput.includes('hello') || lowerInput.includes('hi')) {
-        return "Hello! How can I help you today?";
+      return "Hello! How can I help you today?";
     } else if (lowerInput.includes('bye')) {
-        return "Goodbye! It was nice talking to you.";
+      return "Goodbye! It was nice talking to you.";
     } else if (lowerInput.includes('remember')) {
-        return "Can you elaborate on what you mean by 'remember'?";
+      return "Can you elaborate on what you mean by 'remember'?";
     } else if (lowerInput.includes('always')) {
-        return "Can you think of a specific example of when that happens?";
+      return "Can you think of a specific example of when that happens?";
+    } else if (lowerInput.includes('love')) {
+      return "Love is a complex emotion. Can you tell me more about it?";
+    } else if (lowerInput.includes('why')) {
+      return "Why do you think that is?";
+    } else if (lowerInput.includes('like')) {
+      return "What do you like about it?";
+    } else if (lowerInput.includes('friend')) {
+      return "Tell me more about your friend.";
+    } else if (lowerInput.includes('sad')) {
+      return "I'm sorry to hear that. What makes you feel this way?";
+    } else if (lowerInput.includes('happy')) {
+      return "That's wonderful to hear! What made you happy?";
+    } else if (lowerInput.includes('angry')) {
+      return "Why do you feel angry? Can you elaborate?";
     } else {
-        return getRandomFallbackResponse();
+      return getRandomFallbackResponse();
     }
+  
+  
 }
 
 
