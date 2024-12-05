@@ -51,9 +51,26 @@ document.getElementById('send-button').addEventListener('click', () => {
       return "That's wonderful to hear! What made you happy?";
     } else if (lowerInput.includes('angry')) {
       return "Why do you feel angry? Can you elaborate?";
+    } else if (lowerInput.includes('dream')) {
+      return "What do you dream about?";
+    } else if (lowerInput.includes('mother') || lowerInput.includes('father')) {
+      return "Tell me more about your family.";
+    } else if (lowerInput.includes('work')) {
+      return "How do you feel about your work?";
+    } else if (lowerInput.includes('school') || lowerInput.includes('study')) {
+      return "Do you enjoy learning new things?";
+    } else if (lowerInput.includes('afraid') || lowerInput.includes('fear')) {
+      return "What makes you feel afraid?";
+    } else if (lowerInput.includes('help')) {
+      return "What kind of help do you need?";
+    } else if (lowerInput.includes('confused')) {
+      return "Why do you feel confused?";
+    } else if (lowerInput.includes('stress') || lowerInput.includes('stressed')) {
+      return "What is causing you stress?";
     } else {
       return getRandomFallbackResponse();
     }
+  
   
   
 }
