@@ -4,9 +4,11 @@
 Brendan McShane
 ---
 
+In summary I really enjoyed the process of completing these tasks. The freedom to think outside the box, find your own sources and learn more about the process was quite enjoyable. One of the most enjoyable aspects of this process was my ability to work on it when I wanted. I completed the tasks part of the module quite early on and it was nice knowing I had about half of the work done for the repo.
+
 # Jupyter Notebook Tasks 1-4
 
-For more specified information on the tasks and references, please have a look at the markdown part of the Trigrams Jupyter Notebook. For these tasks I was required to do some research on specific topics related to the tasks. While at first I found this all a bit of a challenge, I then realised that there is some really good information out there online on these topics. 
+For more specified information on the tasks and references, please have a look at the markdown part of the Trigrams Jupyter Notebook. For these tasks I was required to do some research on specific topics related to the tasks. While at first I found this all a bit of a challenge, I then realised that there is some really good information out there online on these topics. One other small note about these tasks is that some txt files save to the main folder, I thought of this change too late so I didn't want to mess up my code for the sake of that. Other than that you will find sourcing, comments and markdown text above the relevent code cells in the jupyter notebook.
 
 Here is an example of some of my refernces for these tasks: (note that the references are in my ipynb file in full)
 
