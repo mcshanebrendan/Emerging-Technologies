@@ -33,6 +33,8 @@ Python Software Foundation. (n.d.). Python’s Statistics and Analysis Modules. 
 
 This is a client-side implementation of the ELIZA chatbot, originally created by Joseph Weizenbaum in 1966. The chatbot simulates a conversation by using basic pattern-matching techniques to respond to user input. This project uses plain JavaScript for logic and HTML/CSS for the user interface.
 
+There is also a unit test for the ELIZA chatbot in the \tests folder. I used Jest to run the unit test that tests out the responses of the chatbot. I wanted to add a unit test to add additional complexity to my work and to show that I have gone ahead and considered testing for this process.The file is called eliza.test.js
+
 ## References for Eliza chatbot
 
 Weizenbaum, J. (1966). ELIZA—A Computer Program for the Study of Natural Language Communication Between Man and Machine. Communications of the ACM, 9(1), 36–45. https://doi.org/10.1145/365153.365168
